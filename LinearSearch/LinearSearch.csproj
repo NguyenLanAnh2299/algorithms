@@ -43,6 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bai11_sortByPrice.cs" />
+    <Compile Include="Bai12_sortByName.cs" />
+    <Compile Include="Bai13_sortByCategoryName.cs" />
+    <Compile Include="Bai14_MapProductByCategory.cs" />
+    <Compile Include="Bai15_MinByPrice.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

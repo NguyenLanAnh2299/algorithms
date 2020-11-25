@@ -13,5 +13,10 @@ namespace LinearSearch
             public int quantity { get; set; }
             public int categoryId { get; set; }
             public virtual Category Category { get; set; }
+
+        public static implicit operator Product(char v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
