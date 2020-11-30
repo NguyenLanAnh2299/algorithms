@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LinearSearch
+namespace Algorithms
 {
     class Product
     {
@@ -14,9 +14,9 @@ namespace LinearSearch
             public int categoryId { get; set; }
             public virtual Category Category { get; set; }
 
-        public static implicit operator Product(char v)
-        {
-            throw new NotImplementedException();
-        }
+            public static implicit operator Product(char v)
+            {
+                throw new NotImplementedException();
+            }
     }
 }

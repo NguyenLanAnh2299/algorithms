@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LinearSearch
+namespace Algorithms
 {
     class Program
     {
         //    public static void Main(string[] args)
         //    {
         //} 
-       
+
         //List product by name
         public static Product FindProduct(List<Product> products, string name)
         {
@@ -45,7 +45,7 @@ namespace LinearSearch
             List<Product> results = new List<Product>();
             for (int i = 0; i < products.Count(); i++)
             {
-                if(products[i].price <= price)
+                if (products[i].price <= price)
                 {
                     results.Add(products[i]);
                 }

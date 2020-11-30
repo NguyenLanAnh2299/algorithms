@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LinearSearch
+namespace Algorithms
 {
     class Bai13_sortByCategoryName
     {
@@ -18,14 +18,14 @@ namespace LinearSearch
                     if (products[i].categoryId == category.Id)
                     {
                         pro.Add(products[i]);
-                    }
-                    for (int j = 0; j < categories.Count(); j++)
-                    {
-                        for (int k = 0; k < categories.Count() - 1; k++)
+                        for (int j = 0; j < categories.Count(); j++)
                         {
-                            if (categories[k].name.CompareTo(categories[k].name) > categories[k + 1].name.CompareTo(categories[k].name))
+                            for (int k = 0; k < categories.Count() - 1; k++)
                             {
-                                categories[k] = categories[k + 1];
+                                if (categories[k].name.CompareTo(categories[k].name) > categories[k + 1].name.CompareTo(categories[k].name))
+                                {
+                                    categories[k] = categories[k + 1];
+                                }
                             }
                         }
                     }

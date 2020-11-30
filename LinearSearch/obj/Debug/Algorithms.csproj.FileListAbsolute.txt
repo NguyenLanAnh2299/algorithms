@@ -1,0 +1,4 @@
+C:\Users\Admin\Desktop\Giải thuật\LinearSearch\LinearSearch\obj\Debug\Algorithms.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Giải thuật\LinearSearch\LinearSearch\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Giải thuật\LinearSearch\LinearSearch\obj\Debug\LinearSearch.exe
+C:\Users\Admin\Desktop\Giải thuật\LinearSearch\LinearSearch\obj\Debug\LinearSearch.pdb
