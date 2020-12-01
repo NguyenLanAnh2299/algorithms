@@ -10,28 +10,41 @@ namespace Algorithms
     {
         public static List<Product> MapProductByCategory(List<Product> products, List<Category> categories)
         {
-            List<Product> pro = new List<Product>();
-            foreach (var category in categories)
+            Product temp;
+            int i, j;
+            for (i = 0; i < products.Count() - 1; i++)
             {
-                for (int i = 0; i < products.Count(); i++)
+                int position = i;
+                for (j = i + 1; j < products.Count(); j++)
                 {
-                    if (products[i].categoryId == category.Id)
+                    if (categories[j].name.CompareTo(categories[j].name) > categories[j + 1].name.CompareTo(categories[j].name))
                     {
-                        pro.Add(products[i]);
-                        for (int j = 0; j < categories.Count(); j++)
-                        {
-                            for (int k = 0; k < categories.Count() - 1; k++)
-                            {
-                                if (categories[k].name.CompareTo(categories[k].name) > categories[k + 1].name.CompareTo(categories[k].name))
-                                {
-                                    categories[k] = categories[k + 1];
-                                }
-                            }
-                        }
+                        position = j;
                     }
+                    if (position != i)
+                    {
+                        temp = products[position];
+                        products[position] = products[i];
+                        products[i] = temp;
+                    }
+
                 }
             }
-            return pro;
+            return products;
+        }
+        public static string GetCategoryName(Product product, List<Category> categories)
+        {
+            string categoryName = "";
+            for (int i = 0; i < categories.Count(); i++)
+            {
+                if (product.categoryId == categories[i].Id)
+                {
+                    categoryName = categories[i].name;
+                    product.name = categories[i].name;
+                    break;
+                }
+            }
+            return categoryName;
         }
     }
 }
